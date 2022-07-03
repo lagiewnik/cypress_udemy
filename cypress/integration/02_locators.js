@@ -1,9 +1,11 @@
 /// <reference types="cypress" />
 
 describe("E2E - Locators", () => {
-    it('finding locators method', () => {
+    beforeEach('',()=>{
         cy.visit('/');
-
+    })
+    
+    it('finding locators method', () => {
         cy.get('a');
 
         //by id
@@ -21,6 +23,15 @@ describe("E2E - Locators", () => {
 
         //by multiple attribute
         cy.get('[width="383"][height="267"]')
+
+    });
+
+    it('locators contains', () => {
+        cy.contains('Shop now');
+        cy.contains('[title="Contact Us"]', 'Contact us');
+
+        cy.get("li").parents("#home-page-tabs").find("li").eq(0);
+        cy.get("li").parents("#home-page-tabs").find("li").contains("Best Sellers")
 
     });
 })
