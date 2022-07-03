@@ -1,0 +1,11 @@
+https://www.udemy.com/course/cypress-od-podstaw/
+
+
+== lesson 11
+http://automationpractice.com/index.php
+
+=== pobieranie w konsolu elementów przez document:
+const aaa = document.getElementsByTagName("a")
+
+=== pobieranie elementów przez querySelector:
+let img = document.querySelector("div#htmlcontent_top li:nth-child(1) img")
