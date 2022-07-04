@@ -3,5 +3,6 @@
     "includeShadowDom": true,
     "chromeWebSecurity": true,
     "viewportHeight":768,
-    "viewportWidth":1366
+    "viewportWidth":1366,
+    "failOnStatusCode": false
 }
