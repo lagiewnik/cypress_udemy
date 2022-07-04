@@ -13,7 +13,7 @@ describe("E2E - checkbox handling", () => {
                 cy.log(checked);
             });
         })
-        //Multiple checked for all finded input
+        //Multiple checked for all finded input 1212
         cy.get("#ul_layered_id_attribute_group_1").find("input").check();
     })
     
