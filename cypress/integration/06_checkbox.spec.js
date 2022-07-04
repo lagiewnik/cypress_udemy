@@ -16,5 +16,5 @@ describe("E2E - checkbox handling", () => {
         //Multiple checked for all finded input
         cy.get("#ul_layered_id_attribute_group_1").find("input").check();
     })
-
+    
 });
