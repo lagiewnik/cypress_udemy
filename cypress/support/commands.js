@@ -25,3 +25,12 @@ import 'cypress-file-upload'
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('openTshirtTab', () => { 
+    cy.visit("http://automationpractice.com/index.php?id_category=5&controller=category")
+ })
+
+ Cypress.Commands.add('searchPhrase', (phrase, delay) => { 
+    cy.get('#search_query_top').type(phrase+"{enter}", {delay: delay})
+ })
+ 
