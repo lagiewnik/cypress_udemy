@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+import SelectPage from "../../support/pageObject/selectPage";
+
 describe("E2E - dropdown handling", () => {
     beforeEach('', () => {
         cy.visit('/');
@@ -9,23 +11,19 @@ describe("E2E - dropdown handling", () => {
         cy.visit('/index.php?id_category=3&controller=category');
         
         //By name
-        cy.get('#selectProductSort').select("In stock")
+        SelectPage.select.select("In stock")
 
         //By value
-        cy.get('#selectProductSort').select("price:asc")
+        SelectPage.select.select("price:asc")
 
         //by index
-        cy.get('#selectProductSort').select(7)
+        SelectPage.select.select(7)
 
     })
     
     it('dropdown - all option choice', () => {
         cy.visit('/index.php?id_category=3&controller=category');
-        cy.get('#selectProductSort').then(dropdown => {
-            cy.wrap(dropdown).find("option").each(option =>{
-                cy.wrap(dropdown).select(option.text())
-            })
-        })
+        SelectPage.selectAllOption()
 
     })
 });
