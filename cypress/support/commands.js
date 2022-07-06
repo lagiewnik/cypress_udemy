@@ -33,4 +33,10 @@ Cypress.Commands.add('openTshirtTab', () => {
  Cypress.Commands.add('searchPhrase', (phrase, delay) => { 
     cy.get('#search_query_top').type(phrase+"{enter}", {delay: delay})
  })
+
+ Cypress.Commands.add('signIn', (login, password) => {
+   cy.get("input[placeholder='Email']").type(login);
+   cy.get("input[placeholder='Password']").type(password);
+   cy.get("[type='submit']").click();
+ })
  
