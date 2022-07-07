@@ -38,3 +38,11 @@ Konfiguracja skryptów uruchomieniowych testów cypressa w package.json
 ==== uruchomienie dla kilku przeglądarek
 [source, npm]
 "multi-browser": "npm run alert-test-head -- --browser chrome & npm run alert-test-head -- --browser edge"
+
+== Lesson 42 - pluginy
+
+==== cypress dark 
+https://github.com/bahmutov/cypress-dark
+
+==== cypress-audit
+https://mfrachet.github.io/cypress-audit/guides/lighthouse/installation.html
