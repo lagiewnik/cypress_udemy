@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
+const {faker} = require('@faker-js/faker');
 
 describe( "API request with authorization token tests", () => {
     beforeEach(function() {
         //if we want to refer to fixtures in beforeEach, we do not use the arrow function but function
+       
         cy.fixture("example").then(data=> {
             this.dataFix = data
         })
@@ -19,9 +21,9 @@ describe( "API request with authorization token tests", () => {
         const articleData = {
             "article": {
                 "tagList": [],
-                "title": "kinsdqwe",
-                "description": "dest afsgasfdg",
-                "body": "lopweprpafdsnfgh"
+                "title": faker.random.words(),
+                "description": faker.random.words(10),
+                "body": faker.lorem.paragraph()
             }
         }
 
