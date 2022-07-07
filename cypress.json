@@ -4,5 +4,6 @@
     "chromeWebSecurity": true,
     "viewportHeight":768,
     "viewportWidth":1366,
-    "failOnStatusCode": false
+    "failOnStatusCode": false,
+    "video":false
 }

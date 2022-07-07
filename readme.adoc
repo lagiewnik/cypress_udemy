@@ -4,8 +4,37 @@ https://www.udemy.com/course/cypress-od-podstaw/
 == lesson 11
 http://automationpractice.com/index.php
 
-=== pobieranie w konsolu elementów przez document:
+==== pobieranie w konsolu elementów przez document:
+[source, js]
 const aaa = document.getElementsByTagName("a")
 
-=== pobieranie elementów przez querySelector:
+==== pobieranie elementów przez querySelector:
+[source, js]
 let img = document.querySelector("div#htmlcontent_top li:nth-child(1) img")
+
+== lesson 41
+Konfiguracja skryptów uruchomieniowych testów cypressa w package.json
+
+==== uruchomienie wszystkich testów
+[source, npm]
+"all-tests":"npx cypress run"
+
+==== uruchomienie testów wskazanych z danego katalogu:
+[source, npm]
+"api-tests":"npx cypress run --spec 'cypress/integration/API/*js'"
+
+==== uruchomienie testu w trybie przeglądarkowym (headed)
+[source, npm]
+ "alert-test-head": "npx cypress run --spec 'cypress/integration/08_alerts.spec.js' --headed"
+
+==== uruchomienie w wybranej przeglądarce --browser
+[source, npm]
+"test-head-chrome": "npx cypress run --browser chrome --spec 'cypress/integration/08_alerts.spec.js' --headed",
+
+==== uruchomienie skryptu przez odwołanie sie do innego skryptu i uzupełnienie parametru (--browser)
+[source, npm]
+"test-head-ff": "npm run alert-test-head -- --browser firefox"
+
+==== uruchomienie dla kilku przeglądarek
+[source, npm]
+"multi-browser": "npm run alert-test-head -- --browser chrome & npm run alert-test-head -- --browser edge"

@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "open": "npx cypress open"
+    "open": "npx cypress open",
+    "all-tests":"npx cypress run",
+    "api-tests":"npx cypress run --spec 'cypress/integration/API/*js'",
+    "alert-test-head": "npx cypress run --spec 'cypress/integration/08_alerts.spec.js' --headed",
+    "test-head-chrome": "npx cypress run --browser chrome --spec 'cypress/integration/08_alerts.spec.js' --headed",
+    "test-head-ff": "npm run alert-test-head -- --browser firefox",
+    "multi-browser": "npm run alert-test-head -- --browser chrome & npm run alert-test-head -- --browser edge"
   },
   "keywords": [
     "cypress",

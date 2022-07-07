@@ -36,7 +36,7 @@ describe( "API tests", () => {
         })
     })
 
-    it.only('Correct login', function() {
+    it('Correct login', function() {
         cy.visit("https://angular.realworld.io/");
         cy.intercept("POST", "https://api.realworld.io/api/users/login").as("requestLogin");
         cy.get("a.nav-link").contains('Sign in').click()

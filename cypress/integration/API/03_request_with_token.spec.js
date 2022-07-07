@@ -10,7 +10,7 @@ describe( "API request with authorization token tests", () => {
         })
     })
  
-    it.only('Authorization login request', function() {
+    it('Authorization login request', function() {
         const authorizationData = {
             "user": {
                 "email": "marianoitaliano@wp.pl",
@@ -42,6 +42,5 @@ describe( "API request with authorization token tests", () => {
                     expect(res.status).to.equal(200)
                 })
             }) 
-        
     });
 })
