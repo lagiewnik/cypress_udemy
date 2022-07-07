@@ -19,7 +19,7 @@ describe( "API tests", () => {
         })
     })
 
-    it.only("Incorect login XHR", function() {
+    it("Incorect login XHR", function() {
         //if we want to refer to fixtures in beforeEach, we do not use the arrow function but function
         cy.visit("https://angular.realworld.io/");
         cy.intercept("POST", "https://api.realworld.io/api/users/login").as("requestLogin");
@@ -35,4 +35,20 @@ describe( "API tests", () => {
             expect(res.response.statusMessage).to.equal("Forbidden");
         })
     })
+
+    it.only('Correct login', function() {
+        cy.visit("https://angular.realworld.io/");
+        cy.intercept("POST", "https://api.realworld.io/api/users/login").as("requestLogin");
+        cy.get("a.nav-link").contains('Sign in').click()
+        cy.signIn(this.dataFix.correctLogin, this.dataFix.correctPassword);
+        cy.wait("@requestLogin");
+        cy.get("@requestLogin").then(res=>{
+            cy.log(res);
+            expect(res.response.statusCode).to.equal(200);
+            cy.fixture("example").then(data=> {
+                expect(res.response.statusMessage).to.equal("OK");
+            })
+        })
+        
+    });
 })
