@@ -1,3 +1,5 @@
+:imagesdir: imagedocs
+
 https://www.udemy.com/course/cypress-od-podstaw/
 
 
@@ -46,3 +48,11 @@ https://github.com/bahmutov/cypress-dark
 
 ==== cypress-audit
 https://mfrachet.github.io/cypress-audit/guides/lighthouse/installation.html
+
+== Lesson 43 - Zmienne środowiskowe
+
+1. Założenie katalogu config z plikami konfiguracyjnymi zawierające zmienne np. url, które będą zaczytywane w zależności od wyboru środowiska przy uruchomieniu cypressa. Zawartość wczytywanapliku musi być w json w polu env
+
+image::Code_84DowKPc56.png[test]
+
+2. Dodanie do 

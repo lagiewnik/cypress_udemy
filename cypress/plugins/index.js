@@ -16,6 +16,17 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
+
+// promisified fs module
+const fs = require('fs-extra')
+const path = require('path')
+
+function getConfigurationByFile(file) {
+  const pathToConfigFile = path.resolve('cypress', 'config', `${file}.json`)
+
+  return fs.readJson(pathToConfigFile)
+}
+
 const { lighthouse, prepareAudit } = require("@cypress-audit/lighthouse");
 
 module.exports = (on, config) => {
@@ -26,4 +37,7 @@ module.exports = (on, config) => {
   on("task", {
     lighthouse: lighthouse(), // calling the function is important
   });
+
+  const file = config.env.configFile || 'development'
+  return getConfigurationByFile(file)
 };
