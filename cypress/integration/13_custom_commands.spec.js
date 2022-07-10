@@ -7,6 +7,6 @@ describe("E2E - custom commands handling", ()=> {
 
     it('Custom Commans example', () => {
         cy.openTshirtTab();
-        cy.searchPhrase("batman", 400)
+        cy.searchPhrase("batman", 350)
     });
 })
