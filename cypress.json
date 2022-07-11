@@ -5,6 +5,5 @@
     "viewportHeight":768,
     "viewportWidth":1366,
     "failOnStatusCode": false,
-    "video":false,
-    "theme": "dark"
+    "video":false
 }

@@ -55,4 +55,11 @@ https://mfrachet.github.io/cypress-audit/guides/lighthouse/installation.html
 
 image::Code_84DowKPc56.png[test]
 
-2. Dodanie do 
+2. Dodanie do cypress\plugins\index.js funkcji do zwracania ppliku konfiguracyjnego
+https://docs.cypress.io/api/plugins/configuration-api#Switch-between-multiple-configuration-files
+
+3. Uruchomienie cypressa z parametrami wskazujacymi na plik konfiguracyjny środowiska:
+[source, npm]
+"env-prod-google": "npx cypress open --env configFile=prod",
+"env-development-ali": "npx cypress open --env configFile=development"
+  
