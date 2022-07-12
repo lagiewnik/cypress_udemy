@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.8720" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:09:43" tests="0" file="cypress/integration/09_file_upload.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - file upload handling" timestamp="2022-07-12T20:09:43" tests="1" time="6.8160" failures="0">
+    <testcase name="E2E - file upload handling alert" time="6.8450" classname="alert">
+    </testcase>
+  </testsuite>
+</testsuites>

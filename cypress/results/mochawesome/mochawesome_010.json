@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:09:59.914Z",
+    "end": "2022-07-12T20:10:08.371Z",
+    "duration": 8457,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "936d1e14-eb46-441d-9db1-ee33863c3c58",
+      "title": "",
+      "fullFile": "cypress/integration/11_assertion.spec.js",
+      "file": "cypress/integration/11_assertion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2431b4f0-9794-4517-81a8-1ac186ecb491",
+          "title": "E2E - assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "assertion expect and should",
+              "fullTitle": "E2E - assertions assertion expect and should",
+              "timedOut": null,
+              "duration": 8387,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Text verification should\ncy.get('a[title=\"Contact Us\"]').should(\"contain\", \"Contact us\"); //Text verification execpt\ncy.get('a[title=\"Contact Us\"]').then(link => {\n  expect(link).to.contain(\"Contact us\");\n}); //Negaive text verification\ncy.get('a[title=\"Contact Us\"]').should(\"not.contain\", \"facebook\"); //Negative Text verification execpt\ncy.get('a[title=\"Contact Us\"]').then(link => {\n  expect(link).not.to.contain(\"Contact us FB\");\n}); //Verify if class contain\ncy.get(\"#search_query_top\").should(\"have.class\", \"form-control\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).to.have.class(\"form-control\");\n}); //verify if is visible\ncy.get(\"#search_query_top\").should(\"be.visible\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).be.visible;\n}); //verify count of element\ncy.get(\"ul.sf-menu\").find(\"li\").should(\"have.length\", 14);\ncy.get(\"ul.sf-menu\").find(\"li\").then(eli => {\n  expect(eli).to.have.length(14);\n}); //verify CSS property\ncy.get(\"#search_query_top\").should(\"have.css\", \"line-height\", \"45px\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).to.have.css('line-height', \"45px\");\n});",
+              "err": {},
+              "uuid": "991ea1c4-e00d-4fc2-89df-19d0c0f960ca",
+              "parentUUID": "2431b4f0-9794-4517-81a8-1ac186ecb491",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "991ea1c4-e00d-4fc2-89df-19d0c0f960ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8387,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

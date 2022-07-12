@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="22.8300" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:11:11" tests="0" file="cypress/integration/POM/12_dropdown.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - dropdown handling" timestamp="2022-07-12T20:11:11" tests="2" time="22.7780" failures="0">
+    <testcase name="E2E - dropdown handling dropdown" time="7.4690" classname="dropdown">
+    </testcase>
+    <testcase name="E2E - dropdown handling dropdown - all option choice" time="15.3140" classname="dropdown - all option choice">
+    </testcase>
+  </testsuite>
+</testsuites>

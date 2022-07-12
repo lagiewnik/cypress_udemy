@@ -1,0 +1,1321 @@
+{
+  "stats": {
+    "suites": 19,
+    "tests": 28,
+    "passes": 28,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:08:23.349Z",
+    "end": "2022-07-12T20:11:34.708Z",
+    "duration": 145354,
+    "testsRegistered": 28,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ce83a990-53f9-4977-bafa-59820090265f",
+      "title": "",
+      "fullFile": "cypress/integration/02_locators.spec.js",
+      "file": "cypress/integration/02_locators.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+          "title": "E2E - Locators",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "finding locators method",
+              "fullTitle": "E2E - Locators finding locators method",
+              "timedOut": null,
+              "duration": 4091,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a'); //by id\ncy.get(\"#search_query_top\"); //by class\ncy.get('.form-control'); //by attribute\ncy.get('[name=\"search_query\"]');\ncy.get('[placeholder=\"Search\"]'); //by atrribute + tag\ncy.get('input[placeholder=\"Search\"]'); //by multiple attribute\ncy.get('[width=\"383\"][height=\"267\"]');",
+              "err": {},
+              "uuid": "3174ef0d-8568-4264-a034-f2bc5566dfea",
+              "parentUUID": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "locators contains",
+              "fullTitle": "E2E - Locators locators contains",
+              "timedOut": null,
+              "duration": 1908,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Shop now');\ncy.contains('[title=\"Contact Us\"]', 'Contact us');\ncy.get(\"li\").parents(\"#home-page-tabs\").find(\"li\").eq(0);\ncy.get(\"li\").parents(\"#home-page-tabs\").find(\"li\").contains(\"Best Sellers\");",
+              "err": {},
+              "uuid": "275133e5-97b5-4380-86e6-90a340b584d6",
+              "parentUUID": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3174ef0d-8568-4264-a034-f2bc5566dfea",
+            "275133e5-97b5-4380-86e6-90a340b584d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5999,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "aea30315-3750-4d57-b4db-1116ac328253",
+      "title": "",
+      "fullFile": "cypress/integration/03_clicks.spec.js",
+      "file": "cypress/integration/03_clicks.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "053e22a5-317c-483d-9cf5-22b855ad7396",
+          "title": "E2E - clicks handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "clicks on elemet",
+              "fullTitle": "E2E - clicks handling clicks on elemet",
+              "timedOut": null,
+              "duration": 6826,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#contact-link > a').click();\ncy.get('[title=\"Return to Home\"]').click();",
+              "err": {},
+              "uuid": "53f2d929-ffa0-4621-99ec-2b3e400dfab4",
+              "parentUUID": "053e22a5-317c-483d-9cf5-22b855ad7396",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "53f2d929-ffa0-4621-99ec-2b3e400dfab4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6826,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "18291bda-95a0-4fa6-bb73-2a7df08aad66",
+      "title": "",
+      "fullFile": "cypress/integration/04_type.spec.js",
+      "file": "cypress/integration/04_type.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+          "title": "E2E - typing handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "typing values into the input",
+              "fullTitle": "E2E - typing handling typing values into the input",
+              "timedOut": null,
+              "duration": 7208,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').type(\"hut {enter}\", {\n  delay: 100\n});",
+              "err": {},
+              "uuid": "25a46d9d-768e-41b5-aee1-44be2b658014",
+              "parentUUID": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clearing input ",
+              "fullTitle": "E2E - typing handling Clearing input ",
+              "timedOut": null,
+              "duration": 3399,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').type(\"dress\", {\n  delay: 100\n}).clear();",
+              "err": {},
+              "uuid": "d1978f2b-e346-47d2-8f78-38f0c5a1ced0",
+              "parentUUID": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25a46d9d-768e-41b5-aee1-44be2b658014",
+            "d1978f2b-e346-47d2-8f78-38f0c5a1ced0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10607,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "27414ebe-2a6b-468c-8f14-8467b4c3f4e8",
+      "title": "",
+      "fullFile": "cypress/integration/05_invoke.spec.js",
+      "file": "cypress/integration/05_invoke.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0bb9d6fc-4361-40b3-80e5-3c469324a8e4",
+          "title": "E2E - invoke handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "invoke",
+              "fullTitle": "E2E - invoke handling invoke",
+              "timedOut": null,
+              "duration": 4098,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[title=\"Contact Us\"]').invoke(\"text\").then(text => {\n  cy.log(text);\n});\ncy.get('[title=\"Contact Us\"]').invoke(\"attr\", \"href\").then(link => {\n  cy.log(link);\n});",
+              "err": {},
+              "uuid": "d1eb9733-4c96-470b-8fe7-7af3934e5603",
+              "parentUUID": "0bb9d6fc-4361-40b3-80e5-3c469324a8e4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invoke to get typing value from properties",
+              "fullTitle": "E2E - invoke handling invoke to get typing value from properties",
+              "timedOut": null,
+              "duration": 3671,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').type(\"blue dress\").invoke(\"prop\", \"value\").then(value => {\n  cy.log(value);\n});",
+              "err": {},
+              "uuid": "fb665ae6-6abd-482a-9639-a3cfdde80a32",
+              "parentUUID": "0bb9d6fc-4361-40b3-80e5-3c469324a8e4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d1eb9733-4c96-470b-8fe7-7af3934e5603",
+            "fb665ae6-6abd-482a-9639-a3cfdde80a32"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7769,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "addd2729-aa2b-46ec-b748-256744ec0c28",
+      "title": "",
+      "fullFile": "cypress/integration/06_checkbox.spec.js",
+      "file": "cypress/integration/06_checkbox.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "060f4623-601a-4067-aef1-890bb8b2cb7d",
+          "title": "E2E - checkbox handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checkbox",
+              "fullTitle": "E2E - checkbox handling checkbox",
+              "timedOut": null,
+              "duration": 8580,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\ncy.get('#ul_layered_category_0').find(\"input\").then(checkboxes => {\n  cy.get(checkboxes).eq(0).check();\n  cy.get(checkboxes).eq(1).check({\n    force: true\n  }).invoke(\"prop\", \"checked\").then(checked => {\n    cy.log(checked);\n  });\n}); //Multiple checked for all finded input 1212\ncy.get(\"#ul_layered_id_attribute_group_1\").find(\"input\").check();",
+              "err": {},
+              "uuid": "dc4fa7a4-548d-43f0-8370-2b684210b20d",
+              "parentUUID": "060f4623-601a-4067-aef1-890bb8b2cb7d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc4fa7a4-548d-43f0-8370-2b684210b20d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8580,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2c1b7ee5-203c-48a0-a5b1-ed002c6a70b1",
+      "title": "",
+      "fullFile": "cypress/integration/07_dropdown.spec.js",
+      "file": "cypress/integration/07_dropdown.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4eb54b20-2f41-4c74-a421-0cab4a45e031",
+          "title": "E2E - dropdown handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "dropdown",
+              "fullTitle": "E2E - dropdown handling dropdown",
+              "timedOut": null,
+              "duration": 11952,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category'); //By name\ncy.get('#selectProductSort').select(\"In stock\"); //By value\ncy.get('#selectProductSort').select(\"price:asc\"); //by index\ncy.get('#selectProductSort').select(7);",
+              "err": {},
+              "uuid": "4a533f86-576a-4856-8189-df54e7db645a",
+              "parentUUID": "4eb54b20-2f41-4c74-a421-0cab4a45e031",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "dropdown - all option choice",
+              "fullTitle": "E2E - dropdown handling dropdown - all option choice",
+              "timedOut": null,
+              "duration": 6869,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\ncy.get('#selectProductSort').then(dropdown => {\n  cy.wrap(dropdown).find(\"option\").each(option => {\n    cy.wrap(dropdown).select(option.text());\n  });\n});",
+              "err": {},
+              "uuid": "435529c0-dbfc-4554-8364-8b39912d5036",
+              "parentUUID": "4eb54b20-2f41-4c74-a421-0cab4a45e031",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4a533f86-576a-4856-8189-df54e7db645a",
+            "435529c0-dbfc-4554-8364-8b39912d5036"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18821,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bbd23c3c-e126-49cb-b91f-3c0c98d26d93",
+      "title": "",
+      "fullFile": "cypress/integration/08_alerts.spec.js",
+      "file": "cypress/integration/08_alerts.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+          "title": "E2E - alerts handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alert",
+              "fullTitle": "E2E - alerts handling alert",
+              "timedOut": null,
+              "duration": 232,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alert').click();\ncy.on(\"window:alert\", warning => {\n  expect(warning).to.equal(\"Przykładowa treść alertu\");\n});",
+              "err": {},
+              "uuid": "2844b5ad-094b-4a77-96eb-a10e0013ca5d",
+              "parentUUID": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "alert confirm",
+              "fullTitle": "E2E - alerts handling alert confirm",
+              "timedOut": null,
+              "duration": 174,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alert-confirm').click();\ncy.on(\"window:confirm\", txt => {\n  expect(txt).to.equal(\"Zaakceptuj aby kontynuować!\");\n});\ncy.on(\"window:confirm\", () => true);",
+              "err": {},
+              "uuid": "edbf83ab-3ccb-47b0-9f67-0e0b87afe2e0",
+              "parentUUID": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2844b5ad-094b-4a77-96eb-a10e0013ca5d",
+            "edbf83ab-3ccb-47b0-9f67-0e0b87afe2e0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 406,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "a4256430-5bf9-4dfb-83de-dad7803f3df1",
+      "title": "",
+      "fullFile": "cypress/integration/09_file_upload.spec.js",
+      "file": "cypress/integration/09_file_upload.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "94ae8d43-cf2c-42dd-a95a-c123aa6460c1",
+          "title": "E2E - file upload handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alert",
+              "fullTitle": "E2E - file upload handling alert",
+              "timedOut": null,
+              "duration": 6845,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?controller=contact');\ncy.get('#fileUpload').attachFile(\"../fixtures/myszojelen.jpg\"); //sprawdzenie czy plik sie wgral\ncy.get(\"span.filename\").should(\"contain\", \"myszojelen.jpg\");",
+              "err": {},
+              "uuid": "8548ecf8-609b-4308-8107-d98b766448da",
+              "parentUUID": "94ae8d43-cf2c-42dd-a95a-c123aa6460c1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8548ecf8-609b-4308-8107-d98b766448da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6845,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7776af0d-8714-485f-b69e-d43f5affcb03",
+      "title": "",
+      "fullFile": "cypress/integration/10_scroll_hover.spec.js",
+      "file": "cypress/integration/10_scroll_hover.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a123752-a5ff-4e90-85b2-455dd0f7b4eb",
+          "title": "E2E - scroll, hover handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "hover",
+              "fullTitle": "E2E - scroll, hover handling hover",
+              "timedOut": null,
+              "duration": 6533,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[title=\"Dresses\"]').eq(1).trigger(\"focus\");\ncy.get('li.sfHover a[title=\"Summer Dresses\"]').click(); //scroll to special box\ncy.get(\"#special_block_right\").scrollIntoView();",
+              "err": {},
+              "uuid": "16a9c39c-ba5f-4de1-a672-f440fb83bbde",
+              "parentUUID": "5a123752-a5ff-4e90-85b2-455dd0f7b4eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16a9c39c-ba5f-4de1-a672-f440fb83bbde"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6533,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "936d1e14-eb46-441d-9db1-ee33863c3c58",
+      "title": "",
+      "fullFile": "cypress/integration/11_assertion.spec.js",
+      "file": "cypress/integration/11_assertion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2431b4f0-9794-4517-81a8-1ac186ecb491",
+          "title": "E2E - assertions",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "assertion expect and should",
+              "fullTitle": "E2E - assertions assertion expect and should",
+              "timedOut": null,
+              "duration": 8387,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Text verification should\ncy.get('a[title=\"Contact Us\"]').should(\"contain\", \"Contact us\"); //Text verification execpt\ncy.get('a[title=\"Contact Us\"]').then(link => {\n  expect(link).to.contain(\"Contact us\");\n}); //Negaive text verification\ncy.get('a[title=\"Contact Us\"]').should(\"not.contain\", \"facebook\"); //Negative Text verification execpt\ncy.get('a[title=\"Contact Us\"]').then(link => {\n  expect(link).not.to.contain(\"Contact us FB\");\n}); //Verify if class contain\ncy.get(\"#search_query_top\").should(\"have.class\", \"form-control\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).to.have.class(\"form-control\");\n}); //verify if is visible\ncy.get(\"#search_query_top\").should(\"be.visible\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).be.visible;\n}); //verify count of element\ncy.get(\"ul.sf-menu\").find(\"li\").should(\"have.length\", 14);\ncy.get(\"ul.sf-menu\").find(\"li\").then(eli => {\n  expect(eli).to.have.length(14);\n}); //verify CSS property\ncy.get(\"#search_query_top\").should(\"have.css\", \"line-height\", \"45px\");\ncy.get(\"#search_query_top\").then(search => {\n  expect(search).to.have.css('line-height', \"45px\");\n});",
+              "err": {},
+              "uuid": "991ea1c4-e00d-4fc2-89df-19d0c0f960ca",
+              "parentUUID": "2431b4f0-9794-4517-81a8-1ac186ecb491",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "991ea1c4-e00d-4fc2-89df-19d0c0f960ca"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8387,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "40957020-7986-4f12-8d48-10f6e0819e2f",
+      "title": "",
+      "fullFile": "cypress/integration/13_custom_commands.spec.js",
+      "file": "cypress/integration/13_custom_commands.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d047d2f8-5216-45c8-a3be-a14617e0a494",
+          "title": "E2E - custom commands handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Custom Commans example",
+              "fullTitle": "E2E - custom commands handling Custom Commans example",
+              "timedOut": null,
+              "duration": 12646,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.openTshirtTab();\ncy.searchPhrase(\"batman\", 350);",
+              "err": {},
+              "uuid": "9a233fe2-324f-43bd-ad5c-91f00cdb81a7",
+              "parentUUID": "d047d2f8-5216-45c8-a3be-a14617e0a494",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a233fe2-324f-43bd-ad5c-91f00cdb81a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 12646,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f04d179a-6ff2-431c-8f7e-ed6798cde3e5",
+      "title": "",
+      "fullFile": "cypress/integration/API/01_api.spec.js",
+      "file": "cypress/integration/API/01_api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+          "title": "API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify tegs",
+              "fullTitle": "API tests Verify tegs",
+              "timedOut": null,
+              "duration": 3598,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\").as(\"tags\");\ncy.visit(\"https://angular.realworld.io/\");\ncy.wait(\"@tags\");\ncy.get(\"@tags\").then(res => {\n  //cy.log(res);\n  expect(res.response.statusCode).to.equal(200);\n  expect(res.response.body.tags).to.contain(\"welcome\").and.to.contain(\"implementations\");\n});",
+              "err": {},
+              "uuid": "052fadf2-f42c-4377-98ea-ff218a8af9c4",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Incorect login XHR",
+              "fullTitle": "API tests Incorect login XHR",
+              "timedOut": null,
+              "duration": 1441,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//if we want to refer to fixtures in beforeEach, we do not use the arrow function but function\ncy.visit(\"https://angular.realworld.io/\");\ncy.intercept(\"POST\", \"https://api.realworld.io/api/users/login\").as(\"requestLogin\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.invalidLogin, this.dataFix.invalidPassword);\ncy.wait(\"@requestLogin\");\ncy.get(\"@requestLogin\").then(res => {\n  cy.log(res);\n  expect(res.response.statusCode).to.equal(403);\n  cy.fixture(\"example\").then(data => {\n    expect(res.response.statusMessage).to.equal(data.responseMessage403);\n  });\n  expect(res.response.statusMessage).to.equal(\"Forbidden\");\n});",
+              "err": {},
+              "uuid": "3606318c-0205-4abf-8d69-f7e0f89376f2",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Correct login",
+              "fullTitle": "API tests Correct login",
+              "timedOut": null,
+              "duration": 1444,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://angular.realworld.io/\");\ncy.intercept(\"POST\", \"https://api.realworld.io/api/users/login\").as(\"requestLogin\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.correctLogin, this.dataFix.correctPassword);\ncy.wait(\"@requestLogin\");\ncy.get(\"@requestLogin\").then(res => {\n  cy.log(res);\n  expect(res.response.statusCode).to.equal(200);\n  cy.fixture(\"example\").then(data => {\n    expect(res.response.statusMessage).to.equal(\"OK\");\n  });\n});",
+              "err": {},
+              "uuid": "adbdb8e3-2dcc-4d94-aff8-e22283dc91bb",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "052fadf2-f42c-4377-98ea-ff218a8af9c4",
+            "3606318c-0205-4abf-8d69-f7e0f89376f2",
+            "adbdb8e3-2dcc-4d94-aff8-e22283dc91bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6483,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7a9bb94a-63a5-47f7-b696-c33ea6563fcd",
+      "title": "",
+      "fullFile": "cypress/integration/API/02_API_mock.spec.js",
+      "file": "cypress/integration/API/02_API_mock.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b880d28-f07d-433c-8380-c7bba62f340c",
+          "title": "API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mocking tags response",
+              "fullTitle": "API tests Mocking tags response",
+              "timedOut": null,
+              "duration": 1924,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\", {\n  fixture: 'tags.json'\n}).as(\"tags\");\ncy.visit(\"https://angular.realworld.io/\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.correctLogin, this.dataFix.correctPassword);\ncy.wait(\"@tags\");\ncy.get(\"@tags\").then(res => {\n  cy.log(res.response.body.tags);\n  cy.log(this.tagsFix.tags);\n  expect(res.response.statusCode).to.equal(200);\n  expect(res.response.body.tags).to.deep.equal(this.tagsFix.tags);\n});",
+              "err": {},
+              "uuid": "f36957fa-2197-4ae5-aa0c-b7191091aa01",
+              "parentUUID": "7b880d28-f07d-433c-8380-c7bba62f340c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f36957fa-2197-4ae5-aa0c-b7191091aa01"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1924,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "76c4b51a-0319-4556-b2ef-5d418aae48be",
+      "title": "",
+      "fullFile": "cypress/integration/API/03_request_with_token.spec.js",
+      "file": "cypress/integration/API/03_request_with_token.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b993a4a-8a0b-4892-a2d8-8b9c2764a5f2",
+          "title": "API request with authorization token tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Authorization login request",
+              "fullTitle": "API request with authorization token tests Authorization login request",
+              "timedOut": null,
+              "duration": 799,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const authorizationData = {\n  \"user\": {\n    \"email\": \"marianoitaliano@wp.pl\",\n    \"password\": \"mariano\"\n  }\n};\nconst articleData = {\n  \"article\": {\n    \"tagList\": [],\n    \"title\": faker.random.words(),\n    \"description\": faker.random.words(10),\n    \"body\": faker.lorem.paragraph()\n  }\n};\ncy.request(\"POST\", \"https://api.realworld.io/api/users/login\", authorizationData).its(\"body\").then(res => {\n  const authToken = res.user.token;\n  cy.request({\n    method: \"POST\",\n    url: \"https://api.realworld.io/api/articles/\",\n    body: articleData,\n    headers: {\n      'Authorization': \"Token \" + authToken\n    }\n  }).then(res => {\n    expect(res.status).to.equal(200);\n  });\n});",
+              "err": {},
+              "uuid": "2ab845bd-ebce-45dc-b06e-0bf675603765",
+              "parentUUID": "5b993a4a-8a0b-4892-a2d8-8b9c2764a5f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ab845bd-ebce-45dc-b06e-0bf675603765"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 799,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4a3ea449-7f0c-4ccc-9498-ce2487fb25b8",
+      "title": "",
+      "fullFile": "cypress/integration/ENV/startpage.spec.js",
+      "file": "cypress/integration/ENV/startpage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ace813a-b439-48b0-a973-e71f7dbc469f",
+          "title": "E2E - Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Shoould open home page",
+              "fullTitle": "E2E - Home Page Shoould open home page",
+              "timedOut": null,
+              "duration": 9217,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(Cypress.env(\"url\"));",
+              "err": {},
+              "uuid": "23a2cd36-de4f-4099-a46c-c27cd7bd9f9d",
+              "parentUUID": "3ace813a-b439-48b0-a973-e71f7dbc469f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "23a2cd36-de4f-4099-a46c-c27cd7bd9f9d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9217,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "83f77bfa-23bd-4c74-aa3f-4d5d050c1251",
+      "title": "",
+      "fullFile": "cypress/integration/lighthouse/lighthouse.spec.js",
+      "file": "cypress/integration/lighthouse/lighthouse.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "94204795-53e0-4c66-9235-8edbb254861f",
+          "title": "Lighthouse tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should verify the lighthouse scores with thresholds",
+              "fullTitle": "Lighthouse tests should verify the lighthouse scores with thresholds",
+              "timedOut": null,
+              "duration": 5275,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");\ncy.lighthouse({\n  performance: 85,\n  accessibility: 100,\n  \"best-practices\": 85,\n  seo: 85,\n  pwa: 100\n});",
+              "err": {},
+              "uuid": "178d4661-844a-4584-8468-ec78c8f8c83c",
+              "parentUUID": "94204795-53e0-4c66-9235-8edbb254861f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "178d4661-844a-4584-8468-ec78c8f8c83c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5275,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c1cf6895-ba9f-467a-a9e3-a4dbb6f63dc2",
+      "title": "",
+      "fullFile": "cypress/integration/POM/12_alert.spec.js",
+      "file": "cypress/integration/POM/12_alert.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8c000689-1f36-4b43-b36e-a3e10525b903",
+          "title": "E2E - alert handling by PageObject",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alert",
+              "fullTitle": "E2E - alert handling by PageObject alert",
+              "timedOut": null,
+              "duration": 317,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertPage.default.clickOnAlertBtn();\n_alertPage.default.verifyAlertText(\"Przykładowa treść alertu\");",
+              "err": {},
+              "uuid": "196e63be-b6a1-4bdb-8f04-a039e49cf2ad",
+              "parentUUID": "8c000689-1f36-4b43-b36e-a3e10525b903",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "alert confirm",
+              "fullTitle": "E2E - alert handling by PageObject alert confirm",
+              "timedOut": null,
+              "duration": 211,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_alertPage.default.clickOnAlertConfirmBtn();\n_alertPage.default.verifyAlertConfirmText(\"Zaakceptuj aby kontynuować!\");\n_alertPage.default.acceptAlertConfirm();",
+              "err": {},
+              "uuid": "c123516c-13a4-4d48-b4fc-9fcf8711fcf8",
+              "parentUUID": "8c000689-1f36-4b43-b36e-a3e10525b903",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "196e63be-b6a1-4bdb-8f04-a039e49cf2ad",
+            "c123516c-13a4-4d48-b4fc-9fcf8711fcf8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 528,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f7be5b1c-4981-4d89-9340-cb57e07ab3b8",
+      "title": "",
+      "fullFile": "cypress/integration/POM/12_dropdown.spec.js",
+      "file": "cypress/integration/POM/12_dropdown.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+          "title": "E2E - dropdown handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "dropdown",
+              "fullTitle": "E2E - dropdown handling dropdown",
+              "timedOut": null,
+              "duration": 7469,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category'); //By name\n_selectPage.default.select.select(\"In stock\"); //By value\n\n_selectPage.default.select.select(\"price:asc\"); //by index\n\n_selectPage.default.select.select(7);",
+              "err": {},
+              "uuid": "86b9fe91-74d6-4f3a-a695-aef6defa0692",
+              "parentUUID": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "dropdown - all option choice",
+              "fullTitle": "E2E - dropdown handling dropdown - all option choice",
+              "timedOut": null,
+              "duration": 15314,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\n_selectPage.default.selectAllOption();",
+              "err": {},
+              "uuid": "1725833a-720e-4a17-9a3b-cac00a31f2b3",
+              "parentUUID": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86b9fe91-74d6-4f3a-a695-aef6defa0692",
+            "1725833a-720e-4a17-9a3b-cac00a31f2b3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22783,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "4aecfcec-c929-467c-87f8-7598d3bdc302",
+      "title": "",
+      "fullFile": "cypress/integration/01_first.spec.js",
+      "file": "cypress/integration/01_first.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a1a75d3b-b5ca-4135-b94e-20ab79fd980f",
+          "title": "E2E - Home Page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Shoould open home page",
+              "fullTitle": "E2E - Home Page Shoould open home page",
+              "timedOut": null,
+              "duration": 4926,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/\");",
+              "err": {},
+              "uuid": "d9f7b615-bebc-4d85-828f-eaf2b23de1ad",
+              "parentUUID": "a1a75d3b-b5ca-4135-b94e-20ab79fd980f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d9f7b615-bebc-4d85-828f-eaf2b23de1ad"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4926,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

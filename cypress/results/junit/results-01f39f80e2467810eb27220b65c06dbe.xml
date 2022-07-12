@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.7020" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:11:07" tests="0" file="cypress/integration/POM/12_alert.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - alert handling by PageObject" timestamp="2022-07-12T20:11:07" tests="2" time="2.6230" failures="0">
+    <testcase name="E2E - alert handling by PageObject alert" time="0.3170" classname="alert">
+    </testcase>
+    <testcase name="E2E - alert handling by PageObject alert confirm" time="0.2110" classname="alert confirm">
+    </testcase>
+  </testsuite>
+</testsuites>

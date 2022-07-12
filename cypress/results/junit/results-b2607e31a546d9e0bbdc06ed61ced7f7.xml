@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="7.8040" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:08:58" tests="0" file="cypress/integration/05_invoke.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - invoke handling" timestamp="2022-07-12T20:08:58" tests="2" time="7.7140" failures="0">
+    <testcase name="E2E - invoke handling invoke" time="4.0980" classname="invoke">
+    </testcase>
+    <testcase name="E2E - invoke handling invoke to get typing value from properties" time="3.6710" classname="invoke to get typing value from properties">
+    </testcase>
+  </testsuite>
+</testsuites>

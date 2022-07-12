@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:09:07.937Z",
+    "end": "2022-07-12T20:09:16.532Z",
+    "duration": 8595,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "addd2729-aa2b-46ec-b748-256744ec0c28",
+      "title": "",
+      "fullFile": "cypress/integration/06_checkbox.spec.js",
+      "file": "cypress/integration/06_checkbox.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "060f4623-601a-4067-aef1-890bb8b2cb7d",
+          "title": "E2E - checkbox handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "checkbox",
+              "fullTitle": "E2E - checkbox handling checkbox",
+              "timedOut": null,
+              "duration": 8580,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\ncy.get('#ul_layered_category_0').find(\"input\").then(checkboxes => {\n  cy.get(checkboxes).eq(0).check();\n  cy.get(checkboxes).eq(1).check({\n    force: true\n  }).invoke(\"prop\", \"checked\").then(checked => {\n    cy.log(checked);\n  });\n}); //Multiple checked for all finded input 1212\ncy.get(\"#ul_layered_id_attribute_group_1\").find(\"input\").check();",
+              "err": {},
+              "uuid": "dc4fa7a4-548d-43f0-8370-2b684210b20d",
+              "parentUUID": "060f4623-601a-4067-aef1-890bb8b2cb7d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc4fa7a4-548d-43f0-8370-2b684210b20d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8580,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -13,7 +13,12 @@
     "test-head-ff": "npm run alert-test-head -- --browser firefox",
     "multi-browser": "npm run alert-test-head -- --browser chrome & npm run alert-test-head -- --browser edge",
     "env-prod-google": "npx cypress open --env configFile=prod",
-    "env-development-ali": "npx cypress open --env configFile=development"
+    "env-development-ali": "npx cypress open --env configFile=development",
+    "delete:reports": "rm -r cypress/results/* || true",
+    "prereport": "npm run delete:reports",
+    "mochawesome:merge": "npx mochawesome-merge 'cypress/results/mochawesome/*.json' > mochawesome.json",
+    "mochawesome:html":"npx marge mochawesome.json",
+    "full:raport:test":"npm run delete:reports && npm run all-tests && npm run mochawesome:merge && npm run mochawesome:html"
   },
   "keywords": [
     "cypress",
@@ -28,7 +33,10 @@
     "cypress-dark": "^1.8.3",
     "cypress-file-upload": "^5.0.8",
     "cypress-multi-reporters": "^1.6.1",
-    "mocha-junit-reporter": "^2.0.2"
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.2.0"
   },
   "dependencies": {
     "@faker-js/faker": "^7.3.0"

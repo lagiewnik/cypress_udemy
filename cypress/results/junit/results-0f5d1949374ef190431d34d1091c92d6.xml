@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.4500" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:10:45" tests="0" file="cypress/integration/ENV/startpage.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Home Page" timestamp="2022-07-12T20:10:45" tests="1" time="12.3820" failures="0">
+    <testcase name="E2E - Home Page Shoould open home page" time="9.2170" classname="Shoould open home page">
+    </testcase>
+  </testsuite>
+</testsuites>

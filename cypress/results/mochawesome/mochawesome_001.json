@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:08:29.953Z",
+    "end": "2022-07-12T20:08:36.007Z",
+    "duration": 6054,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ce83a990-53f9-4977-bafa-59820090265f",
+      "title": "",
+      "fullFile": "cypress/integration/02_locators.spec.js",
+      "file": "cypress/integration/02_locators.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+          "title": "E2E - Locators",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "finding locators method",
+              "fullTitle": "E2E - Locators finding locators method",
+              "timedOut": null,
+              "duration": 4091,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a'); //by id\ncy.get(\"#search_query_top\"); //by class\ncy.get('.form-control'); //by attribute\ncy.get('[name=\"search_query\"]');\ncy.get('[placeholder=\"Search\"]'); //by atrribute + tag\ncy.get('input[placeholder=\"Search\"]'); //by multiple attribute\ncy.get('[width=\"383\"][height=\"267\"]');",
+              "err": {},
+              "uuid": "3174ef0d-8568-4264-a034-f2bc5566dfea",
+              "parentUUID": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "locators contains",
+              "fullTitle": "E2E - Locators locators contains",
+              "timedOut": null,
+              "duration": 1908,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.contains('Shop now');\ncy.contains('[title=\"Contact Us\"]', 'Contact us');\ncy.get(\"li\").parents(\"#home-page-tabs\").find(\"li\").eq(0);\ncy.get(\"li\").parents(\"#home-page-tabs\").find(\"li\").contains(\"Best Sellers\");",
+              "err": {},
+              "uuid": "275133e5-97b5-4380-86e6-90a340b584d6",
+              "parentUUID": "6a04af26-f2fe-4638-a12a-9c5ec51fe364",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3174ef0d-8568-4264-a034-f2bc5566dfea",
+            "275133e5-97b5-4380-86e6-90a340b584d6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5999,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.4570" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:09:59" tests="0" file="cypress/integration/11_assertion.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - assertions" timestamp="2022-07-12T20:09:59" tests="1" time="8.3930" failures="0">
+    <testcase name="E2E - assertions assertion expect and should" time="8.3870" classname="assertion expect and should">
+    </testcase>
+  </testsuite>
+</testsuites>

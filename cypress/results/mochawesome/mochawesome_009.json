@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:09:51.517Z",
+    "end": "2022-07-12T20:09:58.073Z",
+    "duration": 6556,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7776af0d-8714-485f-b69e-d43f5affcb03",
+      "title": "",
+      "fullFile": "cypress/integration/10_scroll_hover.spec.js",
+      "file": "cypress/integration/10_scroll_hover.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5a123752-a5ff-4e90-85b2-455dd0f7b4eb",
+          "title": "E2E - scroll, hover handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "hover",
+              "fullTitle": "E2E - scroll, hover handling hover",
+              "timedOut": null,
+              "duration": 6533,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a[title=\"Dresses\"]').eq(1).trigger(\"focus\");\ncy.get('li.sfHover a[title=\"Summer Dresses\"]').click(); //scroll to special box\ncy.get(\"#special_block_right\").scrollIntoView();",
+              "err": {},
+              "uuid": "16a9c39c-ba5f-4de1-a672-f440fb83bbde",
+              "parentUUID": "5a123752-a5ff-4e90-85b2-455dd0f7b4eb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "16a9c39c-ba5f-4de1-a672-f440fb83bbde"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6533,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
