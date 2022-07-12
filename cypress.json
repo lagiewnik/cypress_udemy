@@ -2,8 +2,12 @@
     "baseUrl": "http://automationpractice.com",
     "includeShadowDom": true,
     "chromeWebSecurity": true,
-    "viewportHeight":768,
-    "viewportWidth":1366,
+    "viewportHeight": 768,
+    "viewportWidth": 1366,
     "failOnStatusCode": false,
-    "video":false
+    "video": false,
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "configFile": "reporter-config.json"
+    }
 }
