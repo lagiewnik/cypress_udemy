@@ -8,5 +8,6 @@ describe("E2E - clicks handling", ()=> {
     it('clicks on elemet', () => {
         cy.get('#contact-link > a').click();
         cy.get('[title="Return to Home"]').click()
+        cy.visit()
     });
 })

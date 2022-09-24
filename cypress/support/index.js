@@ -15,7 +15,8 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import 'cypress-dark'
+//import 'cypress-dark'
+import '@percy/cypress';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

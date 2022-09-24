@@ -1,5 +1,6 @@
 {
     "baseUrl": "http://automationpractice.com",
+    "projectId": "sorry-cypress",
     "includeShadowDom": true,
     "chromeWebSecurity": true,
     "viewportHeight": 768,
