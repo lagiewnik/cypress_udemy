@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:11:11.878Z",
+    "end": "2022-07-12T20:11:34.708Z",
+    "duration": 22830,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7be5b1c-4981-4d89-9340-cb57e07ab3b8",
+      "title": "",
+      "fullFile": "cypress/integration/POM/12_dropdown.spec.js",
+      "file": "cypress/integration/POM/12_dropdown.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+          "title": "E2E - dropdown handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "dropdown",
+              "fullTitle": "E2E - dropdown handling dropdown",
+              "timedOut": null,
+              "duration": 7469,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category'); //By name\n_selectPage.default.select.select(\"In stock\"); //By value\n\n_selectPage.default.select.select(\"price:asc\"); //by index\n\n_selectPage.default.select.select(7);",
+              "err": {},
+              "uuid": "86b9fe91-74d6-4f3a-a695-aef6defa0692",
+              "parentUUID": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "dropdown - all option choice",
+              "fullTitle": "E2E - dropdown handling dropdown - all option choice",
+              "timedOut": null,
+              "duration": 15314,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/index.php?id_category=3&controller=category');\n_selectPage.default.selectAllOption();",
+              "err": {},
+              "uuid": "1725833a-720e-4a17-9a3b-cac00a31f2b3",
+              "parentUUID": "a7d2fc4d-d0c1-4211-860f-7cea3fc5cd6a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "86b9fe91-74d6-4f3a-a695-aef6defa0692",
+            "1725833a-720e-4a17-9a3b-cac00a31f2b3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 22783,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

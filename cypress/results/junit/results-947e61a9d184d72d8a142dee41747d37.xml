@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.5560" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:09:51" tests="0" file="cypress/integration/10_scroll_hover.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - scroll, hover handling" timestamp="2022-07-12T20:09:51" tests="1" time="6.4910" failures="0">
+    <testcase name="E2E - scroll, hover handling hover" time="6.5330" classname="hover">
+    </testcase>
+  </testsuite>
+</testsuites>

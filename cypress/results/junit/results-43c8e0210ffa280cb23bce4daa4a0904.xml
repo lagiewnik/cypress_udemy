@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.8340" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:10:43" tests="0" file="cypress/integration/API/03_request_with_token.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="API request with authorization token tests" timestamp="2022-07-12T20:10:43" tests="1" time="0.7610" failures="0">
+    <testcase name="API request with authorization token tests Authorization login request" time="0.7990" classname="Authorization login request">
+    </testcase>
+  </testsuite>
+</testsuites>

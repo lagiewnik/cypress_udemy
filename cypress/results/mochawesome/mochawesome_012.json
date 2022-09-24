@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:10:24.375Z",
+    "end": "2022-07-12T20:10:33.657Z",
+    "duration": 9282,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f04d179a-6ff2-431c-8f7e-ed6798cde3e5",
+      "title": "",
+      "fullFile": "cypress/integration/API/01_api.spec.js",
+      "file": "cypress/integration/API/01_api.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+          "title": "API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify tegs",
+              "fullTitle": "API tests Verify tegs",
+              "timedOut": null,
+              "duration": 3598,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\").as(\"tags\");\ncy.visit(\"https://angular.realworld.io/\");\ncy.wait(\"@tags\");\ncy.get(\"@tags\").then(res => {\n  //cy.log(res);\n  expect(res.response.statusCode).to.equal(200);\n  expect(res.response.body.tags).to.contain(\"welcome\").and.to.contain(\"implementations\");\n});",
+              "err": {},
+              "uuid": "052fadf2-f42c-4377-98ea-ff218a8af9c4",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Incorect login XHR",
+              "fullTitle": "API tests Incorect login XHR",
+              "timedOut": null,
+              "duration": 1441,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//if we want to refer to fixtures in beforeEach, we do not use the arrow function but function\ncy.visit(\"https://angular.realworld.io/\");\ncy.intercept(\"POST\", \"https://api.realworld.io/api/users/login\").as(\"requestLogin\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.invalidLogin, this.dataFix.invalidPassword);\ncy.wait(\"@requestLogin\");\ncy.get(\"@requestLogin\").then(res => {\n  cy.log(res);\n  expect(res.response.statusCode).to.equal(403);\n  cy.fixture(\"example\").then(data => {\n    expect(res.response.statusMessage).to.equal(data.responseMessage403);\n  });\n  expect(res.response.statusMessage).to.equal(\"Forbidden\");\n});",
+              "err": {},
+              "uuid": "3606318c-0205-4abf-8d69-f7e0f89376f2",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Correct login",
+              "fullTitle": "API tests Correct login",
+              "timedOut": null,
+              "duration": 1444,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://angular.realworld.io/\");\ncy.intercept(\"POST\", \"https://api.realworld.io/api/users/login\").as(\"requestLogin\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.correctLogin, this.dataFix.correctPassword);\ncy.wait(\"@requestLogin\");\ncy.get(\"@requestLogin\").then(res => {\n  cy.log(res);\n  expect(res.response.statusCode).to.equal(200);\n  cy.fixture(\"example\").then(data => {\n    expect(res.response.statusMessage).to.equal(\"OK\");\n  });\n});",
+              "err": {},
+              "uuid": "adbdb8e3-2dcc-4d94-aff8-e22283dc91bb",
+              "parentUUID": "364b1e3b-e6f7-4dc4-8956-a4e7713322d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "052fadf2-f42c-4377-98ea-ff218a8af9c4",
+            "3606318c-0205-4abf-8d69-f7e0f89376f2",
+            "adbdb8e3-2dcc-4d94-aff8-e22283dc91bb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6483,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

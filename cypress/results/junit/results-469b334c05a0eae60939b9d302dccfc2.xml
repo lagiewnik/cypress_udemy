@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="6.0540" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:08:29" tests="0" file="cypress/integration/02_locators.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - Locators" timestamp="2022-07-12T20:08:30" tests="2" time="5.9820" failures="0">
+    <testcase name="E2E - Locators finding locators method" time="4.0910" classname="finding locators method">
+    </testcase>
+    <testcase name="E2E - Locators locators contains" time="1.9080" classname="locators contains">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:10:35.513Z",
+    "end": "2022-07-12T20:10:38.912Z",
+    "duration": 3399,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7a9bb94a-63a5-47f7-b696-c33ea6563fcd",
+      "title": "",
+      "fullFile": "cypress/integration/API/02_API_mock.spec.js",
+      "file": "cypress/integration/API/02_API_mock.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b880d28-f07d-433c-8380-c7bba62f340c",
+          "title": "API tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Mocking tags response",
+              "fullTitle": "API tests Mocking tags response",
+              "timedOut": null,
+              "duration": 1924,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept(\"GET\", \"https://api.realworld.io/api/tags\", {\n  fixture: 'tags.json'\n}).as(\"tags\");\ncy.visit(\"https://angular.realworld.io/\");\ncy.get(\"a.nav-link\").contains('Sign in').click();\ncy.signIn(this.dataFix.correctLogin, this.dataFix.correctPassword);\ncy.wait(\"@tags\");\ncy.get(\"@tags\").then(res => {\n  cy.log(res.response.body.tags);\n  cy.log(this.tagsFix.tags);\n  expect(res.response.statusCode).to.equal(200);\n  expect(res.response.body.tags).to.deep.equal(this.tagsFix.tags);\n});",
+              "err": {},
+              "uuid": "f36957fa-2197-4ae5-aa0c-b7191091aa01",
+              "parentUUID": "7b880d28-f07d-433c-8380-c7bba62f340c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f36957fa-2197-4ae5-aa0c-b7191091aa01"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1924,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

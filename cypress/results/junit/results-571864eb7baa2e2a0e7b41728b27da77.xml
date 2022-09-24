@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.3990" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:10:35" tests="0" file="cypress/integration/API/02_API_mock.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="API tests" timestamp="2022-07-12T20:10:35" tests="1" time="3.3470" failures="0">
+    <testcase name="API tests Mocking tags response" time="1.9240" classname="Mocking tags response">
+    </testcase>
+  </testsuite>
+</testsuites>

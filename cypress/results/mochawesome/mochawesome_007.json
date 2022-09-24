@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:09:38.832Z",
+    "end": "2022-07-12T20:09:41.360Z",
+    "duration": 2528,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bbd23c3c-e126-49cb-b91f-3c0c98d26d93",
+      "title": "",
+      "fullFile": "cypress/integration/08_alerts.spec.js",
+      "file": "cypress/integration/08_alerts.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+          "title": "E2E - alerts handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "alert",
+              "fullTitle": "E2E - alerts handling alert",
+              "timedOut": null,
+              "duration": 232,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alert').click();\ncy.on(\"window:alert\", warning => {\n  expect(warning).to.equal(\"Przykładowa treść alertu\");\n});",
+              "err": {},
+              "uuid": "2844b5ad-094b-4a77-96eb-a10e0013ca5d",
+              "parentUUID": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "alert confirm",
+              "fullTitle": "E2E - alerts handling alert confirm",
+              "timedOut": null,
+              "duration": 174,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#alert-confirm').click();\ncy.on(\"window:confirm\", txt => {\n  expect(txt).to.equal(\"Zaakceptuj aby kontynuować!\");\n});\ncy.on(\"window:confirm\", () => true);",
+              "err": {},
+              "uuid": "edbf83ab-3ccb-47b0-9f67-0e0b87afe2e0",
+              "parentUUID": "80fa5c6d-3cea-4dc3-8e2d-3a3b5123ff48",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2844b5ad-094b-4a77-96eb-a10e0013ca5d",
+            "edbf83ab-3ccb-47b0-9f67-0e0b87afe2e0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 406,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

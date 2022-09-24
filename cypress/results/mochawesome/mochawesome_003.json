@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:08:46.137Z",
+    "end": "2022-07-12T20:08:56.777Z",
+    "duration": 10640,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "18291bda-95a0-4fa6-bb73-2a7df08aad66",
+      "title": "",
+      "fullFile": "cypress/integration/04_type.spec.js",
+      "file": "cypress/integration/04_type.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+          "title": "E2E - typing handling",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "typing values into the input",
+              "fullTitle": "E2E - typing handling typing values into the input",
+              "timedOut": null,
+              "duration": 7208,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').type(\"hut {enter}\", {\n  delay: 100\n});",
+              "err": {},
+              "uuid": "25a46d9d-768e-41b5-aee1-44be2b658014",
+              "parentUUID": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Clearing input ",
+              "fullTitle": "E2E - typing handling Clearing input ",
+              "timedOut": null,
+              "duration": 3399,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#search_query_top').type(\"dress\", {\n  delay: 100\n}).clear();",
+              "err": {},
+              "uuid": "d1978f2b-e346-47d2-8f78-38f0c5a1ced0",
+              "parentUUID": "a3fb5230-60d9-42db-ad21-f7c1c3ecbc7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "25a46d9d-768e-41b5-aee1-44be2b658014",
+            "d1978f2b-e346-47d2-8f78-38f0c5a1ced0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10607,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

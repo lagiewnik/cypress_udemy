@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-07-12T20:10:43.467Z",
+    "end": "2022-07-12T20:10:44.301Z",
+    "duration": 834,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "76c4b51a-0319-4556-b2ef-5d418aae48be",
+      "title": "",
+      "fullFile": "cypress/integration/API/03_request_with_token.spec.js",
+      "file": "cypress/integration/API/03_request_with_token.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b993a4a-8a0b-4892-a2d8-8b9c2764a5f2",
+          "title": "API request with authorization token tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Authorization login request",
+              "fullTitle": "API request with authorization token tests Authorization login request",
+              "timedOut": null,
+              "duration": 799,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const authorizationData = {\n  \"user\": {\n    \"email\": \"marianoitaliano@wp.pl\",\n    \"password\": \"mariano\"\n  }\n};\nconst articleData = {\n  \"article\": {\n    \"tagList\": [],\n    \"title\": faker.random.words(),\n    \"description\": faker.random.words(10),\n    \"body\": faker.lorem.paragraph()\n  }\n};\ncy.request(\"POST\", \"https://api.realworld.io/api/users/login\", authorizationData).its(\"body\").then(res => {\n  const authToken = res.user.token;\n  cy.request({\n    method: \"POST\",\n    url: \"https://api.realworld.io/api/articles/\",\n    body: articleData,\n    headers: {\n      'Authorization': \"Token \" + authToken\n    }\n  }).then(res => {\n    expect(res.status).to.equal(200);\n  });\n});",
+              "err": {},
+              "uuid": "2ab845bd-ebce-45dc-b06e-0bf675603765",
+              "parentUUID": "5b993a4a-8a0b-4892-a2d8-8b9c2764a5f2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ab845bd-ebce-45dc-b06e-0bf675603765"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 799,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.6400" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2022-07-12T20:08:46" tests="0" file="cypress/integration/04_type.spec.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="E2E - typing handling" timestamp="2022-07-12T20:08:46" tests="2" time="10.5770" failures="0">
+    <testcase name="E2E - typing handling typing values into the input" time="7.2080" classname="typing values into the input">
+    </testcase>
+    <testcase name="E2E - typing handling Clearing input " time="3.3990" classname="Clearing input ">
+    </testcase>
+  </testsuite>
+</testsuites>
